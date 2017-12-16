@@ -25,6 +25,7 @@ A Kalman filter was implemented in order to get the quaternion based in the meas
 The Kalman filter algorithm was developed taking into account the sample time and  some parts of the necessary math were pre-calculated, because that, the error between the experimental and the expected result is mainly caused by a delay of the sampling time produced by the conversion of floating point data in ASCII before be send.  
 
 ![Quaternion dimensions. Expected Results (line Blue) vs experimental Results (line Green).](images/Kalman.jpg)
+Quaternion dimensions. Expected Results (line Blue) vs experimental Results (line Green).
 
 ### Tracking Movement Approach
 
