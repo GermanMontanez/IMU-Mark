@@ -24,7 +24,7 @@ A Kalman filter was implemented in order to get the quaternion based in the meas
 
 The Kalman filter algorithm was developed taking into account the sample time and  some parts of the necessary math were pre-calculated, because that, the error between the experimental and the expected result is mainly caused by a delay of the sampling time produced by the conversion of floating point data in ASCII before be send.  
 
-![Quaternion dimensions. Expected Results (line Blue) vs experimental Results (line Green).](images/Kalman.png)
+![Quaternion dimensions. Expected Results (line Blue) vs experimental Results (line Green).](images/Kalman.jpg)
 
 ### Tracking Movement Approach
 
@@ -32,7 +32,7 @@ Is possible to approximate the position of a movement body by knowing its accele
 
 The figure shows the tracking of a square trajectory. To take the measure, the device was placed in a person foot, that is the reason of the irregularity of the trace. Notice that the scale is in meters, and a single step is 0.3 meters average, then the precision of the measure is not reliable but the general shape of the trajectory is similar to the path followed.
 
-![Plot of the movement traking](images/Traking.png)
+![Plot of the movement traking](images/Traking.jpg)
 
 ## Conclusions
 
