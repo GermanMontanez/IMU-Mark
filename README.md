@@ -8,14 +8,15 @@ For precision tracking of both fast and slow motions, the parts feature a user-p
 
 All sensors and communication modules are controlled by a powerful 32-bit ARM Cortex-M4 microcontroller, with DSP instruction support and floating-point unit that allows the processing of complex math functions and handling decimal variables.
 
-![alt text](images/dimentions.png) ![alt text](images/Real.png)
+![Device Dimensions and final product.](images/dimentions.png) 
+![](images/Real.png)
 
 ## Application Information
 
 To test the Device two approaches were developed. The first one implements a Kalman filter to get the orientation, and the second one collect the data from the sensors when a control signal is received to tracking the route of a moving person. In both cases the data were processing in MATLAB to analyze the overall performance.
 The orientation of each inertial sensor is showed in the figure:
 
-![alt text](images/Orientations.png)
+![](images/Orientation.png)
 
 ### Kalman Filter Approach
 
@@ -23,7 +24,7 @@ A Kalman filter was implemented in order to get the quaternion based in the meas
 
 The Kalman filter algorithm was developed taking into account the sample time and  some parts of the necessary math were pre-calculated, because that, the error between the experimental and the expected result is mainly caused by a delay of the sampling time produced by the conversion of floating point data in ASCII before be send.  
 
-![alt text](images/Kalman.png)
+![Quaternion dimensions. Expected Results (line Blue) vs experimental Results (line Green).](images/Kalman.png)
 
 ### Tracking Movement Approach
 
@@ -31,7 +32,7 @@ Is possible to approximate the position of a movement body by knowing its accele
 
 The figure shows the tracking of a square trajectory. To take the measure, the device was placed in a person foot, that is the reason of the irregularity of the trace. Notice that the scale is in meters, and a single step is 0.3 meters average, then the precision of the measure is not reliable but the general shape of the trajectory is similar to the path followed.
 
-![alt text](images/Traking.png)
+![Plot of the movement traking](images/Traking.png)
 
 ## Conclusions
 
