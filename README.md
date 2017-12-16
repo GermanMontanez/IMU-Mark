@@ -31,7 +31,7 @@ Quaternion dimensions. Expected Results (line Blue) vs experimental Results (lin
 
 Is possible to approximate the position of a movement body by knowing its acceleration. However, the noise in the measures and the existence of bias could be hard to handle in the algorithm based in the observation of the accelerometer. With the open source algorithm developed by  XIO-Tecnologies to track the movement that take into account the accelerometer, gyroscope and magnetometer measures the IMU-MARK was tested. The data are collected in a fixed step time controlled by a control signal from the computer then, all data are processing in MATLAB.
 
-The figure shows the tracking of a square trajectory. To take the measure, the device was placed in a person foot, that is the reason of the irregularity of the trace. Notice that the scale is in meters, and a single step is 0.3 meters average, then the precision of the measure is not reliable but the general shape of the trajectory is similar to the path followed.
+The figure shows the tracking of a square trajectory. To take the measure, the device was placed in a person foot, that is the reason of the irregularity of the trace. Notice that the scale is in meters, and a single step is 0.03 meters average, then the precision of the measure is not reliable but the general shape of the trajectory is similar to the path followed.
 
 ![Plot of the movement traking](images/Traking.jpg)
 
